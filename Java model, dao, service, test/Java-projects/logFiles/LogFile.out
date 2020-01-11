@@ -1,0 +1,116 @@
+--DAO initalized--
+--Logger info--
+0 autó van az adatbázisban 
+Car{Renddszám:'AAA-000', Márka:'Ford', Típus:Focus, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2013-04-21, Kilométer óra állása:54000.34} hozzáadva, igy az autók száma: 1
+1 autó van az adatbázisban 
+Car{Renddszám:'BBB-111', Márka:'AlfaRomeo', Típus:XCv1, Ajtók száma:3, Üzemanyag:PETROL, Gyártási dátum:1988-03-20, Kilométer óra állása:540.4} hozzáadva, igy az autók száma: 2
+2 autó van az adatbázisban 
+Car{Renddszám:'CCC-444', Márka:'Tesla', Típus:Roadster, Ajtók száma:3, Üzemanyag:ELECTRCONIC, Gyártási dátum:2010-11-04, Kilométer óra állása:543.43} hozzáadva, igy az autók száma: 3
+--DAO initalized--
+--Logger info--
+0 autó van az adatbázisban 
+Car{Renddszám:'AAA-000', Márka:'Ford', Típus:Focus, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2013-04-21, Kilométer óra állása:54000.34} hozzáadva, igy az autók száma: 1
+1 autó van az adatbázisban 
+Car{Renddszám:'BBB-111', Márka:'AlfaRomeo', Típus:XCv1, Ajtók száma:3, Üzemanyag:PETROL, Gyártási dátum:1988-03-20, Kilométer óra állása:540.4} hozzáadva, igy az autók száma: 2
+2 autó van az adatbázisban 
+Car{Renddszám:'CCC-444', Márka:'Tesla', Típus:Roadster, Ajtók száma:3, Üzemanyag:ELECTRCONIC, Gyártási dátum:2010-11-04, Kilométer óra állása:543.43} hozzáadva, igy az autók száma: 3
+--DAO--
+--Logger info--
+0 autó van az adatbázisban 
+Car{Renddszám:'AAA-000', Márka:'Ford', Típus:Focus, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2013-04-21, Kilométer óra állása:54000.34} hozzáadva, igy az autók száma: 1
+1 autó van az adatbázisban 
+Car{Renddszám:'BBB-111', Márka:'AlfaRomeo', Típus:XCv1, Ajtók száma:3, Üzemanyag:PETROL, Gyártási dátum:1988-03-20, Kilométer óra állása:540.4} hozzáadva, igy az autók száma: 2
+2 autó van az adatbázisban 
+Car{Renddszám:'CCC-444', Márka:'Tesla', Típus:Roadster, Ajtók száma:3, Üzemanyag:ELECTRCONIC, Gyártási dátum:2010-11-04, Kilométer óra állása:543.43} hozzáadva, igy az autók száma: 3
+--DAO--
+--Logger info--
+0 autó van az adatbázisban 
+Car{Renddszám:'AAA-000', Márka:'Ford', Típus:Focus, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2013-04-21, Kilométer óra állása:54000.34} hozzáadva, igy az autók száma: 1
+1 autó van az adatbázisban 
+Car{Renddszám:'BBB-111', Márka:'AlfaRomeo', Típus:XCv1, Ajtók száma:3, Üzemanyag:PETROL, Gyártási dátum:1988-03-20, Kilométer óra állása:540.4} hozzáadva, igy az autók száma: 2
+2 autó van az adatbázisban 
+Car{Renddszám:'CCC-444', Márka:'Tesla', Típus:Roadster, Ajtók száma:3, Üzemanyag:ELECTRCONIC, Gyártási dátum:2010-11-04, Kilométer óra állása:543.43} hozzáadva, igy az autók száma: 3
+--DAO--
+--Logger info--
+0 autó van az adatbázisban 
+Car{Renddszám:'AAA-000', Márka:'Ford', Típus:Focus, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2013-04-21, Kilométer óra állása:54000.34} hozzáadva, igy az autók száma: 1
+1 autó van az adatbázisban 
+Car{Renddszám:'BBB-111', Márka:'AlfaRomeo', Típus:XCv1, Ajtók száma:3, Üzemanyag:PETROL, Gyártási dátum:1988-03-20, Kilométer óra állása:540.4} hozzáadva, igy az autók száma: 2
+2 autó van az adatbázisban 
+Car{Renddszám:'CCC-444', Márka:'Tesla', Típus:Roadster, Ajtók száma:3, Üzemanyag:ELECTRCONIC, Gyártási dátum:2010-11-04, Kilométer óra állása:543.43} hozzáadva, igy az autók száma: 3
+--DAO--
+--Logger info--
+0 autó van az adatbázisban 
+Car{Renddszám:'AAA-000', Márka:'Ford', Típus:Focus, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2013-04-21, Kilométer óra állása:54000.34} hozzáadva, igy az autók száma: 1
+1 autó van az adatbázisban 
+Car{Renddszám:'BBB-111', Márka:'AlfaRomeo', Típus:XCv1, Ajtók száma:3, Üzemanyag:PETROL, Gyártási dátum:1988-03-20, Kilométer óra állása:540.4} hozzáadva, igy az autók száma: 2
+2 autó van az adatbázisban 
+Car{Renddszám:'CCC-444', Márka:'Tesla', Típus:Roadster, Ajtók száma:3, Üzemanyag:ELECTRCONIC, Gyártási dátum:2010-11-04, Kilométer óra állása:543.43} hozzáadva, igy az autók száma: 3
+--DAO--
+--Logger info--
+0 autó van az adatbázisban 
+Car{Renddszám:'AAA-000', Márka:'Ford', Típus:Focus, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2013-04-21, Kilométer óra állása:54000.34} hozzáadva, igy az autók száma: 1
+1 autó van az adatbázisban 
+Car{Renddszám:'BBB-111', Márka:'AlfaRomeo', Típus:XCv1, Ajtók száma:3, Üzemanyag:PETROL, Gyártási dátum:1988-03-20, Kilométer óra állása:540.4} hozzáadva, igy az autók száma: 2
+2 autó van az adatbázisban 
+Car{Renddszám:'CCC-444', Márka:'Tesla', Típus:Roadster, Ajtók száma:3, Üzemanyag:ELECTRCONIC, Gyártási dátum:2010-11-04, Kilométer óra állása:543.43} hozzáadva, igy az autók száma: 3
+--DAO--
+--Logger info--
+0 autó van az adatbázisban 
+Car{Renddszám:'AAA-000', Márka:'Ford', Típus:Focus, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2013-04-21, Kilométer óra állása:54000.34} hozzáadva, igy az autók száma: 1
+1 autó van az adatbázisban 
+Car{Renddszám:'BBB-111', Márka:'AlfaRomeo', Típus:XCv1, Ajtók száma:3, Üzemanyag:PETROL, Gyártási dátum:1988-03-20, Kilométer óra állása:540.4} hozzáadva, igy az autók száma: 2
+2 autó van az adatbázisban 
+Car{Renddszám:'CCC-444', Márka:'Tesla', Típus:Roadster, Ajtók száma:3, Üzemanyag:ELECTRCONIC, Gyártási dátum:2010-11-04, Kilométer óra állása:543.43} hozzáadva, igy az autók száma: 3
+--DAO--
+--Logger info--
+0 autó van az adatbázisban 
+Car{Renddszám:'AAA-000', Márka:'Ford', Típus:Focus, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2013-04-21, Kilométer óra állása:54000.34} hozzáadva, igy az autók száma: 1
+1 autó van az adatbázisban 
+Car{Renddszám:'BBB-111', Márka:'AlfaRomeo', Típus:XCv1, Ajtók száma:3, Üzemanyag:PETROL, Gyártási dátum:1988-03-20, Kilométer óra állása:540.4} hozzáadva, igy az autók száma: 2
+2 autó van az adatbázisban 
+Car{Renddszám:'CCC-444', Márka:'Tesla', Típus:Roadster, Ajtók száma:3, Üzemanyag:ELECTRCONIC, Gyártási dátum:2010-11-04, Kilométer óra állása:543.43} hozzáadva, igy az autók száma: 3
+Uj autó!Car{Renddszám:'GLF-109', Márka:'Audi', Típus:A4, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2015-11-04, Kilométer óra állása:12500.5}
+Uj autó!Car{Renddszám:'RAP-503', Márka:'Jaguar', Típus:Qx7, Ajtók száma:3, Üzemanyag:DISEL, Gyártási dátum:2017-01-12, Kilométer óra állása:1500.0}
+Uj autó!Car{Renddszám:'GLF-109', Márka:'Audi', Típus:A4, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2015-11-04, Kilométer óra állása:12500.5}
+Uj autó!Car{Renddszám:'GLF-109', Márka:'Audi', Típus:A4, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2015-11-04, Kilométer óra állása:12500.5}
+Uj autó!Car{Renddszám:'RAP-503', Márka:'Jaguar', Típus:Qx7, Ajtók száma:3, Üzemanyag:DISEL, Gyártási dátum:2017-01-12, Kilométer óra állása:1500.0}
+Uj autó!Car{Renddszám:'GLF-109', Márka:'Audi', Típus:A4, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2015-11-04, Kilométer óra állása:12500.5}
+--DAO--
+--Logger info--
+0 autó van az adatbázisban 
+Car{Renddszám:'AAA-000', Márka:'Ford', Típus:Focus, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2013-04-21, Kilométer óra állása:54000.34} hozzáadva, igy az autók száma: 1
+1 autó van az adatbázisban 
+Car{Renddszám:'BBB-111', Márka:'AlfaRomeo', Típus:XCv1, Ajtók száma:3, Üzemanyag:PETROL, Gyártási dátum:1988-03-20, Kilométer óra állása:540.4} hozzáadva, igy az autók száma: 2
+2 autó van az adatbázisban 
+Car{Renddszám:'CCC-444', Márka:'Tesla', Típus:Roadster, Ajtók száma:3, Üzemanyag:ELECTRCONIC, Gyártási dátum:2010-11-04, Kilométer óra állása:543.43} hozzáadva, igy az autók száma: 3
+--DAO--
+--Logger info--
+0 autó van az adatbázisban 
+Car{Renddszám:'AAA-000', Márka:'Ford', Típus:Focus, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2013-04-21, Kilométer óra állása:54000.34} hozzáadva, igy az autók száma: 1
+1 autó van az adatbázisban 
+Car{Renddszám:'BBB-111', Márka:'AlfaRomeo', Típus:XCv1, Ajtók száma:3, Üzemanyag:PETROL, Gyártási dátum:1988-03-20, Kilométer óra állása:540.4} hozzáadva, igy az autók száma: 2
+2 autó van az adatbázisban 
+Car{Renddszám:'CCC-444', Márka:'Tesla', Típus:Roadster, Ajtók száma:3, Üzemanyag:ELECTRCONIC, Gyártási dátum:2010-11-04, Kilométer óra állása:543.43} hozzáadva, igy az autók száma: 3
+--DAO--
+--Logger info--
+0 autó van az adatbázisban 
+Car{Renddszám:'AAA-000', Márka:'Ford', Típus:Focus, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2013-04-21, Kilométer óra állása:54000.34} hozzáadva, igy az autók száma: 1
+1 autó van az adatbázisban 
+Car{Renddszám:'BBB-111', Márka:'AlfaRomeo', Típus:XCv1, Ajtók száma:3, Üzemanyag:PETROL, Gyártási dátum:1988-03-20, Kilométer óra állása:540.4} hozzáadva, igy az autók száma: 2
+2 autó van az adatbázisban 
+Car{Renddszám:'CCC-444', Márka:'Tesla', Típus:Roadster, Ajtók száma:3, Üzemanyag:ELECTRCONIC, Gyártási dátum:2010-11-04, Kilométer óra állása:543.43} hozzáadva, igy az autók száma: 3
+Uj autó!Car{Renddszám:'ABC-123', Márka:'Opel', Típus:Astra, Ajtók száma:4, Üzemanyag:PETROL, Gyártási dátum:2012-11-01, Kilométer óra állása:55.56}
+Uj autó!Car{Renddszám:'GLF-109', Márka:'Audi', Típus:A4, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2015-11-04, Kilométer óra állása:12500.5}
+Uj autó!Car{Renddszám:'RAP-503', Márka:'Jaguar', Típus:Qx7, Ajtók száma:3, Üzemanyag:DISEL, Gyártási dátum:2017-01-12, Kilométer óra állása:1500.0}
+Uj autó!Car{Renddszám:'GLF-109', Márka:'Audi', Típus:A4, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2015-11-04, Kilométer óra állása:12500.5}
+Uj autó!Car{Renddszám:'RAP-503', Márka:'Jaguar', Típus:Qx7, Ajtók száma:3, Üzemanyag:DISEL, Gyártási dátum:2017-01-12, Kilométer óra állása:1500.0}
+Uj autó!Car{Renddszám:'GLF-109', Márka:'Audi', Típus:A4, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2015-11-04, Kilométer óra állása:12500.5}
+Uj autó!Car{Renddszám:'RAP-503', Márka:'Jaguar', Típus:Qx7, Ajtók száma:3, Üzemanyag:DISEL, Gyártási dátum:2017-01-12, Kilométer óra állása:1500.0}
+Uj autó!Car{Renddszám:'GLF-109', Márka:'Audi', Típus:A4, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2015-11-04, Kilométer óra állása:12500.5}
+Uj autó!Car{Renddszám:'RAP-503', Márka:'Jaguar', Típus:Qx7, Ajtók száma:3, Üzemanyag:DISEL, Gyártási dátum:2017-01-12, Kilométer óra állása:1500.0}
+Uj autó!Car{Renddszám:'GLF-109', Márka:'Audi', Típus:A4, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2015-11-04, Kilométer óra állása:12500.5}
+Uj autó!Car{Renddszám:'RAP-503', Márka:'Jaguar', Típus:Qx7, Ajtók száma:3, Üzemanyag:DISEL, Gyártási dátum:2017-01-12, Kilométer óra állása:1500.0}
+Uj autó!Car{Renddszám:'GLF-109', Márka:'Audi', Típus:A4, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2015-11-04, Kilométer óra állása:12500.5}
+Uj autó!Car{Renddszám:'RAP-503', Márka:'Jaguar', Típus:Qx7, Ajtók száma:3, Üzemanyag:DISEL, Gyártási dátum:2017-01-12, Kilométer óra állása:1500.0}
+Uj autó!Car{Renddszám:'GLF-109', Márka:'Audi', Típus:A4, Ajtók száma:5, Üzemanyag:DISEL, Gyártási dátum:2015-11-04, Kilométer óra állása:12500.5}
