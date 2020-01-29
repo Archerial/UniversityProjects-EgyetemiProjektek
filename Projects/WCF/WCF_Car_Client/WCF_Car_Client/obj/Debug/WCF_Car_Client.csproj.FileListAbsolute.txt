@@ -1,0 +1,10 @@
+c:\users\adam\documents\visual studio 2015\Projects\WCF_Car_Client\WCF_Car_Client\bin\Debug\WCF_Car_Client.exe.config
+C:\Users\Adam\documents\visual studio 2015\Projects\WCF_Car_Client\WCF_Car_Client\obj\Debug\WCF_Car_Client.csprojResolveAssemblyReference.cache
+C:\Users\Adam\documents\visual studio 2015\Projects\WCF_Car_Client\WCF_Car_Client\obj\Debug\WCF_Car_Client.Form1.resources
+C:\Users\Adam\documents\visual studio 2015\Projects\WCF_Car_Client\WCF_Car_Client\obj\Debug\WCF_Car_Client.Properties.Resources.resources
+C:\Users\Adam\documents\visual studio 2015\Projects\WCF_Car_Client\WCF_Car_Client\obj\Debug\WCF_Car_Client.csproj.GenerateResource.Cache
+C:\Users\Adam\documents\visual studio 2015\Projects\WCF_Car_Client\WCF_Car_Client\bin\Debug\WCF_Car_Client.exe
+C:\Users\Adam\documents\visual studio 2015\Projects\WCF_Car_Client\WCF_Car_Client\bin\Debug\WCF_Car_Client.pdb
+C:\Users\Adam\documents\visual studio 2015\Projects\WCF_Car_Client\WCF_Car_Client\obj\Debug\WCF_Car_Client.exe
+C:\Users\Adam\documents\visual studio 2015\Projects\WCF_Car_Client\WCF_Car_Client\obj\Debug\WCF_Car_Client.pdb
+C:\Users\Adam\documents\visual studio 2015\Projects\WCF_Car_Client\WCF_Car_Client\obj\Debug\WCF_Car_Client.LoginForm.resources

@@ -1,0 +1,10 @@
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\WCF_Cars\WCF_Cars_HOST\bin\Debug\ApplicationInsights.config
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\WCF_Cars\WCF_Cars_HOST\bin\Debug\WCF_Cars_HOST.exe.config
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\WCF_Cars\WCF_Cars_HOST\bin\Debug\WCF_Cars_HOST.exe
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\WCF_Cars\WCF_Cars_HOST\bin\Debug\WCF_Cars_HOST.pdb
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\WCF_Cars\WCF_Cars_HOST\bin\Debug\WCF_Cars.dll
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\WCF_Cars\WCF_Cars_HOST\bin\Debug\MySql.Data.dll
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\WCF_Cars\WCF_Cars_HOST\bin\Debug\WCF_Cars.pdb
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\WCF_Cars\WCF_Cars_HOST\obj\Debug\WCF_Cars_HOST.csprojResolveAssemblyReference.cache
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\WCF_Cars\WCF_Cars_HOST\obj\Debug\WCF_Cars_HOST.exe
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\WCF_Cars\WCF_Cars_HOST\obj\Debug\WCF_Cars_HOST.pdb

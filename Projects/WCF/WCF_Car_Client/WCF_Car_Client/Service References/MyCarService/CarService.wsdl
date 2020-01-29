@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CarService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="NetTcpBinding_ICarService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <msf:WindowsTransportSecurity xmlns:msf="http://schemas.microsoft.com/ws/2006/05/framing/policy">
+                  <msf:ProtectionLevel>EncryptAndSign</msf:ProtectionLevel>
+                </msf:WindowsTransportSecurity>
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:52003/CarService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:52003/CarService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WCF_Cars.Fault" />
+      <xsd:import schemaLocation="http://localhost:52003/CarService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:52003/CarService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCF_Cars" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICarService_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoWork" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_GetAllCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCar" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_GetAllCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_GetAllCar_DataBaseConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WCF_Cars.Fault" name="detail" element="q1:DataBaseConnectionFault" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_AddCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCar" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_AddCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_AddCar_DataBaseConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/WCF_Cars.Fault" name="detail" element="q2:DataBaseConnectionFault" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_DeleteCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCar" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_DeleteCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_DeleteCar_IdNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/WCF_Cars.Fault" name="detail" element="q3:IdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_DeleteCar_DataBaseConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/WCF_Cars.Fault" name="detail" element="q4:DataBaseConnectionFault" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_SearchCarById_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCarById" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_SearchCarById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCarByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_SearchCarById_DataBaseConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/WCF_Cars.Fault" name="detail" element="q5:DataBaseConnectionFault" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_SearchCarById_IdNotFoundFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/WCF_Cars.Fault" name="detail" element="q6:IdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_YoungestCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:YoungestCar" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_YoungestCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:YoungestCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_YoungestCar_DataBaseConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/WCF_Cars.Fault" name="detail" element="q7:DataBaseConnectionFault" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_OldestCar_InputMessage">
+    <wsdl:part name="parameters" element="tns:OldestCar" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_OldestCar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OldestCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_OldestCar_DataBaseConnectionFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/WCF_Cars.Fault" name="detail" element="q8:DataBaseConnectionFault" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_Logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_Logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_GuidHas_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuidHas" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_GuidHas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuidHasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_GuidReturn_InputMessage">
+    <wsdl:part name="parameters" element="tns:GuidReturn" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_GuidReturn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GuidReturnResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICarService_GuidReturn_NotLoggedInFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/WCF_Cars.Fault" name="detail" element="q9:NotLoggedInFault" />
+  </wsdl:message>
+  <wsdl:portType name="ICarService">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarService/DoWork" message="tns:ICarService_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarService/DoWorkResponse" message="tns:ICarService_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarService/GetAllCar" message="tns:ICarService_GetAllCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarService/GetAllCarResponse" message="tns:ICarService_GetAllCar_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICarService/GetAllCarDataBaseConnectionFaultFault" name="DataBaseConnectionFaultFault" message="tns:ICarService_GetAllCar_DataBaseConnectionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarService/AddCar" message="tns:ICarService_AddCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarService/AddCarResponse" message="tns:ICarService_AddCar_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICarService/AddCarDataBaseConnectionFaultFault" name="DataBaseConnectionFaultFault" message="tns:ICarService_AddCar_DataBaseConnectionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarService/DeleteCar" message="tns:ICarService_DeleteCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarService/DeleteCarResponse" message="tns:ICarService_DeleteCar_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICarService/DeleteCarIdNotFoundFaultFault" name="IdNotFoundFaultFault" message="tns:ICarService_DeleteCar_IdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICarService/DeleteCarDataBaseConnectionFaultFault" name="DataBaseConnectionFaultFault" message="tns:ICarService_DeleteCar_DataBaseConnectionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchCarById">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarService/SearchCarById" message="tns:ICarService_SearchCarById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarService/SearchCarByIdResponse" message="tns:ICarService_SearchCarById_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICarService/SearchCarByIdDataBaseConnectionFaultFault" name="DataBaseConnectionFaultFault" message="tns:ICarService_SearchCarById_DataBaseConnectionFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICarService/SearchCarByIdIdNotFoundFaultFault" name="IdNotFoundFaultFault" message="tns:ICarService_SearchCarById_IdNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="YoungestCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarService/YoungestCar" message="tns:ICarService_YoungestCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarService/YoungestCarResponse" message="tns:ICarService_YoungestCar_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICarService/YoungestCarDataBaseConnectionFaultFault" name="DataBaseConnectionFaultFault" message="tns:ICarService_YoungestCar_DataBaseConnectionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OldestCar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarService/OldestCar" message="tns:ICarService_OldestCar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarService/OldestCarResponse" message="tns:ICarService_OldestCar_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICarService/OldestCarDataBaseConnectionFaultFault" name="DataBaseConnectionFaultFault" message="tns:ICarService_OldestCar_DataBaseConnectionFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarService/Login" message="tns:ICarService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarService/LoginResponse" message="tns:ICarService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarService/Logout" message="tns:ICarService_Logout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarService/LogoutResponse" message="tns:ICarService_Logout_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuidHas">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarService/GuidHas" message="tns:ICarService_GuidHas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarService/GuidHasResponse" message="tns:ICarService_GuidHas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GuidReturn">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICarService/GuidReturn" message="tns:ICarService_GuidReturn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICarService/GuidReturnResponse" message="tns:ICarService_GuidReturn_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICarService/GuidReturnNotLoggedInFaultFault" name="NotLoggedInFaultFault" message="tns:ICarService_GuidReturn_NotLoggedInFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICarService" type="tns:ICarService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoWork">
+      <soap:operation soapAction="http://tempuri.org/ICarService/DoWork" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCar">
+      <soap:operation soapAction="http://tempuri.org/ICarService/GetAllCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataBaseConnectionFaultFault">
+        <soap:fault use="literal" name="DataBaseConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddCar">
+      <soap:operation soapAction="http://tempuri.org/ICarService/AddCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataBaseConnectionFaultFault">
+        <soap:fault use="literal" name="DataBaseConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCar">
+      <soap:operation soapAction="http://tempuri.org/ICarService/DeleteCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="IdNotFoundFaultFault">
+        <soap:fault use="literal" name="IdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DataBaseConnectionFaultFault">
+        <soap:fault use="literal" name="DataBaseConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SearchCarById">
+      <soap:operation soapAction="http://tempuri.org/ICarService/SearchCarById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataBaseConnectionFaultFault">
+        <soap:fault use="literal" name="DataBaseConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="IdNotFoundFaultFault">
+        <soap:fault use="literal" name="IdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="YoungestCar">
+      <soap:operation soapAction="http://tempuri.org/ICarService/YoungestCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataBaseConnectionFaultFault">
+        <soap:fault use="literal" name="DataBaseConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="OldestCar">
+      <soap:operation soapAction="http://tempuri.org/ICarService/OldestCar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataBaseConnectionFaultFault">
+        <soap:fault use="literal" name="DataBaseConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/ICarService/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://tempuri.org/ICarService/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuidHas">
+      <soap:operation soapAction="http://tempuri.org/ICarService/GuidHas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuidReturn">
+      <soap:operation soapAction="http://tempuri.org/ICarService/GuidReturn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="NotLoggedInFaultFault">
+        <soap:fault use="literal" name="NotLoggedInFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NetTcpBinding_ICarService" type="tns:ICarService">
+    <wsp:PolicyReference URI="#NetTcpBinding_ICarService_policy" />
+    <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
+    <wsdl:operation name="DoWork">
+      <soap12:operation soapAction="http://tempuri.org/ICarService/DoWork" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCar">
+      <soap12:operation soapAction="http://tempuri.org/ICarService/GetAllCar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataBaseConnectionFaultFault">
+        <soap12:fault use="literal" name="DataBaseConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="AddCar">
+      <soap12:operation soapAction="http://tempuri.org/ICarService/AddCar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataBaseConnectionFaultFault">
+        <soap12:fault use="literal" name="DataBaseConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCar">
+      <soap12:operation soapAction="http://tempuri.org/ICarService/DeleteCar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="IdNotFoundFaultFault">
+        <soap12:fault use="literal" name="IdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DataBaseConnectionFaultFault">
+        <soap12:fault use="literal" name="DataBaseConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="SearchCarById">
+      <soap12:operation soapAction="http://tempuri.org/ICarService/SearchCarById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataBaseConnectionFaultFault">
+        <soap12:fault use="literal" name="DataBaseConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="IdNotFoundFaultFault">
+        <soap12:fault use="literal" name="IdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="YoungestCar">
+      <soap12:operation soapAction="http://tempuri.org/ICarService/YoungestCar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataBaseConnectionFaultFault">
+        <soap12:fault use="literal" name="DataBaseConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="OldestCar">
+      <soap12:operation soapAction="http://tempuri.org/ICarService/OldestCar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DataBaseConnectionFaultFault">
+        <soap12:fault use="literal" name="DataBaseConnectionFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/ICarService/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap12:operation soapAction="http://tempuri.org/ICarService/Logout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuidHas">
+      <soap12:operation soapAction="http://tempuri.org/ICarService/GuidHas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GuidReturn">
+      <soap12:operation soapAction="http://tempuri.org/ICarService/GuidReturn" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="NotLoggedInFaultFault">
+        <soap12:fault use="literal" name="NotLoggedInFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CarService">
+    <wsdl:port name="BasicHttpBinding_ICarService" binding="tns:BasicHttpBinding_ICarService">
+      <soap:address location="http://localhost:52003/CarService.svc" />
+    </wsdl:port>
+    <wsdl:port name="NetTcpBinding_ICarService" binding="tns:NetTcpBinding_ICarService">
+      <soap12:address location="net.tcp://localhost:8090/" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>net.tcp://localhost:8090/</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <Upn>DESKTOP-SDQRK6C\Adam</Upn>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
