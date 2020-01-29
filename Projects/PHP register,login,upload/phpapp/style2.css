@@ -1,0 +1,44 @@
+
+form{
+    margin-top: 200px;
+    width: fit-content;
+    background-color: orange;
+    
+}
+form div{
+    position: relative;
+    color: black;
+    background-color: orange;
+}
+
+form .tarea{
+    padding-top: 10px;
+}
+
+form .btn{
+    background-color:orange;
+    text-align: center;
+}
+
+body{
+    background-color: rgba(32, 31, 31, 0.774);
+}
+
+.howto{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: larger;
+}
+
+#succesmsg{
+    width: 40%;
+    margin: 0px auto;
+    padding: 10px;
+    color: white;
+    background:grey;
+    border: 5px solid orange;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
