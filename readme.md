@@ -2,7 +2,7 @@
 
 Itt találhatóak az egyetemi éveim alatt készített projektek.
 
-Here you can find my projects, which i make during university.
+A Projects mappán belül, minden általám készített alkalmazáshoz, készült leírás is.
 
 
 
